@@ -20,7 +20,7 @@ namespace FamilyOrgaBack.Services
             _articles.Find(Article => true).ToList();
         
         public Article Get(string id) =>
-            _articles.Find(book => book.Id == id).FirstOrDefault();
+            _articles.Find(article => article.Id == id).FirstOrDefault();
 
         public Article Create(Article article)
         {

@@ -48,6 +48,7 @@ namespace FamilyOrgaBack
             sp.GetRequiredService<IOptions<FamilyOrgaDBSettings>>().Value);
 
             services.AddSingleton<ArticleService>();
+            services.AddSingleton<CalendarEntryServcie>();
             services.AddControllers();
         }
 
